@@ -1,12 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starfeeder", "Starfeeder.csproj", "{3213977C-79CC-1B20-3A45-0E21CD9A43BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3213977C-79CC-1B20-3A45-0E21CD9A43BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3213977C-79CC-1B20-3A45-0E21CD9A43BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3213977C-79CC-1B20-3A45-0E21CD9A43BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3213977C-79CC-1B20-3A45-0E21CD9A43BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
