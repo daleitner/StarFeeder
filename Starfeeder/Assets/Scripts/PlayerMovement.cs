@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     public float speed;
-    private Rigidbody rb;
+    private Rigidbody2D rb2d;
 	// Use this for initialization
 	void Start () {
-        rb = GetComponent<Rigidbody>();
+        rb2d = GetComponent<Rigidbody2D>();
 
 	}
 	
@@ -21,9 +21,9 @@ public class PlayerMovement : MonoBehaviour {
         float moveHorizantal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizantal, 0.0f, moveVertical);
+        Vector2 movement = new Vector2(moveHorizantal, moveVertical);
 
-        rb.AddForce (movement * speed);
+        rb2d.AddForce (movement * speed);
 
 
     }
