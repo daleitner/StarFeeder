@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     public float speed;
+    public float turnspeed;
     private Rigidbody2D rb2d;
 	// Use this for initialization
 	void Start () {
@@ -13,18 +14,21 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    private void FixedUpdate()
-    {
         float moveHorizantal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector2 movement = new Vector2(moveHorizantal, moveVertical);
+        transform.Translate (0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
+        transform.Rotate(0.0f, 0.0f, moveHorizantal * Time.deltaTime * turnspeed);
 
-        rb2d.AddForce (movement * speed);
 
+    }
 
+    private void FixedUpdate()
+    {
+        
+
+    
+      
+     
     }
 }
