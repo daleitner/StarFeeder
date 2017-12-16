@@ -24,12 +24,9 @@ public class SunGravity : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D coll)
+	void OnTriggerExit2D(Collider2D other)
 	{
-		if (coll.gameObject.tag == "Player")
-		{
-			coll.transform.position = new Vector3(-15, 5);
-			coll.rigidbody.velocity = Vector3.zero;
-		}
+		other.attachedRigidbody.velocity = Vector3.zero;
+		other.attachedRigidbody.angularVelocity = 0f;
 	}
 }
