@@ -229,7 +229,6 @@
     <Compile Include="Assets\Scripts\MeteroidSpawner.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Sun.cs" />
     <Compile Include="Assets\Scripts\SunGravity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
