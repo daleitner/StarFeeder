@@ -26,16 +26,19 @@ public class PlayerMovement : MonoBehaviour {
         transform.Translate (0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
         transform.Rotate(0.0f, 0.0f, moveHorizantal * Time.deltaTime * turnspeed);
 
-        if (Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.S)|| Input.GetKeyDown(KeyCode.D))
+        if (Input.anyKey)
         {
             if (!movementSound.isPlaying)
             {
                 movementSound.Play();
             }
         }
-        else {
+        else
+        {
             movementSound.Stop();
         }
+        
+
     }
 
 }
