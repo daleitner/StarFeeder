@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarFeeder", "StarFeeder.csproj", "{F44FEE8C-2239-7E29-142F-3870E5CD8BFE}"
 EndProject
 Global
