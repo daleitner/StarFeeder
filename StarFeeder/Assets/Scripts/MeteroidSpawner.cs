@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using Random = System.Random;
 
@@ -21,7 +22,7 @@ public class MeteroidSpawner : MonoBehaviour
 
 	private Transform playerTransform;
 	private List<GameObject> meteroids;
-
+	private int nextSpawnIn;
 	private Random rnd;
 	// Use this for initialization
 	void Start ()
@@ -29,7 +30,7 @@ public class MeteroidSpawner : MonoBehaviour
 		this.playerTransform = transform;
 		this.meteroids = new List<GameObject> {this.meteroid_1, this.meteroid_2, this.meteroid_3, this.meteroid_4};
 		this.rnd = new Random();
-		
+		this.nextSpawnIn = 5;
 		for (int i = 0; i < this.startCount; i++)
 		{
 			GenerateMeteroid();
@@ -54,13 +55,17 @@ public class MeteroidSpawner : MonoBehaviour
 
 	// Update is called once per frame
 	void Update () {
-		
+		if (Time.fixedTime > this.nextSpawnIn && this.meteroidContainer.transform.childCount < this.maxCount)
+		{
+			this.nextSpawnIn += 5;
+			GenerateMeteroid();
+		}
 	}
 
 	private bool IsPositionValid(int x, int y)
 	{
-		if (this.playerTransform.position.x - 5 <= x && this.playerTransform.position.x + 5 >= x
-		    && this.playerTransform.position.y - 5 <= y && this.playerTransform.position.y + 5 >= y)
+		if (this.playerTransform.position.x - 10 <= x && this.playerTransform.position.x + 10 >= x
+		    && this.playerTransform.position.y - 10 <= y && this.playerTransform.position.y + 10 >= y)
 			return false;
 
 		for (int i = 0; i < this.meteroidContainer.transform.childCount; i++)
