@@ -7,12 +7,12 @@ public class SunGravity : MonoBehaviour
 	public float magnetStrength = 5f;
 
 	private Transform trans;
-	private Rigidbody thisRd;
+	
 
 	void Awake()
 	{
 		this.trans = transform;
-		this.thisRd = this.trans.GetComponent<Rigidbody>();
+		
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -22,7 +22,15 @@ public class SunGravity : MonoBehaviour
 			var direction = this.trans.position - other.transform.position;
 			other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
 		}
-	}
+
+        if (other.tag == "Meteroid" || other.tag=="Meteroid_2" || other.tag=="Meteroid_3" || other.tag=="Meteroid_4")
+        {
+            var direction = this.trans.position - other.transform.position;
+            other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
+        }
+
+
+    }
 
 	void OnTriggerExit2D(Collider2D other)
 	{

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sun
+  - Meteroid_1
+  - Meteroid_2
+  - Meteroid_3
+  - Meteroid_4
   layers:
   - Default
   - TransparentFX
@@ -52,4 +57,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3965015853
+    locked: 0
+  - name: Boundry
+    uniqueID: 3331193233
     locked: 0
