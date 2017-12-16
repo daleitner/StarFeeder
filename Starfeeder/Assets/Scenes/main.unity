@@ -420,6 +420,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4528700426352734, guid: c51b49c773edbad43a3c3c46e4578fe6,
     type: 2}
   m_PrefabInternal: {fileID: 1986434584}
+--- !u!50 &219570172
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219570167}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &353080028
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +768,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4371791158634306, guid: edf129e56f856544596293d8eaeb3cd2,
     type: 2}
   m_PrefabInternal: {fileID: 1743786062}
+--- !u!50 &738620396
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 738620391}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &770661747
 Prefab:
   m_ObjectHideFlags: 0
@@ -1235,6 +1275,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4207819513988570, guid: eaebe69154f5e9142a308cad4d7cbf1c,
     type: 2}
   m_PrefabInternal: {fileID: 1507312655}
+--- !u!50 &1070255570
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070255565}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1116124670
 Prefab:
   m_ObjectHideFlags: 0
@@ -1537,7 +1597,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1672604866309270, guid: e3748ae86b53c7e48915bef90c167b29, type: 2}
       propertyPath: m_TagString
-      value: Metheorid
+      value: Meteroid_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3748ae86b53c7e48915bef90c167b29, type: 2}
@@ -1714,6 +1774,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4163918123596302, guid: e3748ae86b53c7e48915bef90c167b29,
     type: 2}
   m_PrefabInternal: {fileID: 1307542947}
+--- !u!50 &1320437273
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320437268}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1461811769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416506641678912, guid: eaebe69154f5e9142a308cad4d7cbf1c, type: 2}
       propertyPath: m_TagString
-      value: Metheorid
+      value: Meteroid_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eaebe69154f5e9142a308cad4d7cbf1c, type: 2}
@@ -1801,11 +1881,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4371791158634306, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4371791158634306, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 30
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 4371791158634306, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1833,7 +1913,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1458054245400622, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
       propertyPath: m_TagString
-      value: Metheorid
+      value: Meteroid_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
@@ -2045,7 +2125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1049712552268854, guid: c51b49c773edbad43a3c3c46e4578fe6, type: 2}
       propertyPath: m_TagString
-      value: Metheorid
+      value: Meteroid_4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c51b49c773edbad43a3c3c46e4578fe6, type: 2}

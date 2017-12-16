@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-		if (coll.gameObject.tag == "Sun" || coll.gameObject.tag.Contains("Metheorid"))
+		if (coll.gameObject.tag == "Sun" || coll.gameObject.tag.Contains("Meteroid"))
 		{
 			if (this.lives > 0)
 			{
