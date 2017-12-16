@@ -2442,6 +2442,28 @@ GameObject:
   m_PrefabParentObject: {fileID: 1361934117968166, guid: dbc5960ea7df19a4886bdd9d2098000d,
     type: 2}
   m_PrefabInternal: {fileID: 1765544302}
+--- !u!114 &2080834589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080834588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28591da20279194e943aa1978929b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteroid_1: {fileID: 1070255565}
+  meteroid_2: {fileID: 738620391}
+  meteroid_3: {fileID: 1320437268}
+  meteroid_4: {fileID: 219570167}
+  meteroidContainer: {fileID: 1796834708}
+  minX: -300
+  minY: -140
+  maxX: 300
+  maxY: 140
+  startCount: 200
+  maxCount: 200
 --- !u!114 &2080834594
 MonoBehaviour:
   m_ObjectHideFlags: 0
