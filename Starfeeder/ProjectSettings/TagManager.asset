@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sun
-  - Metheorid
+  - Meteroid_1
+  - Meteroid_2
+  - Meteroid_3
+  - Meteroid_4
   layers:
   - Default
   - TransparentFX

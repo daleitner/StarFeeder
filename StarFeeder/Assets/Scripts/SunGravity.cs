@@ -22,7 +22,15 @@ public class SunGravity : MonoBehaviour
 			var direction = this.trans.position - other.transform.position;
 			other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
 		}
-	}
+
+        if (other.tag == "Metheorid" || other.tag=="Metheorid_2" || other.tag=="Metheorid_3" || other.tag=="Metheorid_4")
+        {
+            var direction = this.trans.position - other.transform.position;
+            other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
+        }
+
+
+    }
 
 	void OnTriggerExit2D(Collider2D other)
 	{
