@@ -10,14 +10,16 @@ public class Player : MonoBehaviour
 	public Image thirdLive;
 	public Sprite activeLive;
 	public Sprite inactiveLive;
+	public Canvas canvas;
 	private int lives;
 	private int energyLevel;
-
+	private Animator anim;
 	private Transform trans;
 	// Use this for initialization
 	void Start ()
 	{
 		this.trans = transform;
+		this.anim = canvas.GetComponent<Animator> ();
 		this.lives = 3;
 		this.energyLevel = 1;
 		UpdateLives();
@@ -38,10 +40,8 @@ public class Player : MonoBehaviour
 
 				trans.position = new Vector3(-15, 5);
 				UpdateLives();
-			}
-			else
-			{
-				//handle game over
+				if(this.lives == 0)
+					anim.SetTrigger ("GameOver");
 			}
 		}
 	}
