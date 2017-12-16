@@ -33,9 +33,12 @@ public class PlayerMovement : MonoBehaviour {
                 movementSound.Play();
             }
         }
-        else {
+        else
+        {
             movementSound.Stop();
         }
+        
+
     }
 
 }
