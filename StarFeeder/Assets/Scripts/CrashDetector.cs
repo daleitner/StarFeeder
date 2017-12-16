@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class CrashDetector : MonoBehaviour {
 
-    static int count;
+    private int count;
 
-	void OnCollisionEnter2D(Collision2D coll)
+
+    private void Start()
+    {
+        count = 0;
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
 	{
 		if (coll.gameObject.tag == "Player")
 		{
@@ -18,25 +24,25 @@ public class CrashDetector : MonoBehaviour {
         if (coll.gameObject.tag == "Meteroid_1")
         {
             Destroy(coll.gameObject);
-            count += 1;
+            count = count+ 1;
 
         }
 
         if (coll.gameObject.tag == "Meteroid_2")
         {
             Destroy(coll.gameObject);
-            count += 2;
+            count = count + 1;
         }
         if (coll.gameObject.tag == "Meteroid_3")
         {
             Destroy(coll.gameObject);
-            count += 3;
+            count = count + 1;
 
         }
         if (coll.gameObject.tag == "Meteroid_4")
         {
             Destroy(coll.gameObject);
-            count += 4;
+            count = count + 1;
         }
         
 
