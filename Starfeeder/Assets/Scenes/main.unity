@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!58 &1889321
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -415,6 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!4 &219570171 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4528700426352734, guid: c51b49c773edbad43a3c3c46e4578fe6,
@@ -915,6 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!4 &738620395 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4371791158634306, guid: edf129e56f856544596293d8eaeb3cd2,
@@ -1433,6 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!4 &1070255569 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4207819513988570, guid: eaebe69154f5e9142a308cad4d7cbf1c,
@@ -1874,7 +1878,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: e325a2cf8bd0ace469b771c607f8a69c, type: 3}
+  m_Texture: {fileID: 2800000, guid: dba68512d674e5440999dddb9832bf47, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2054,6 +2058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
 --- !u!4 &1320437272 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4163918123596302, guid: e3748ae86b53c7e48915bef90c167b29,
