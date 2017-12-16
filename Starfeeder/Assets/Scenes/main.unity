@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5003e1dcc383e246bbdb8be7134f7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetStrength: 200
+  magnetStrength: 100
 --- !u!1 &6865806
 GameObject:
   m_ObjectHideFlags: 0

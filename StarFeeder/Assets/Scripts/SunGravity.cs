@@ -7,12 +7,12 @@ public class SunGravity : MonoBehaviour
 	public float magnetStrength = 5f;
 
 	private Transform trans;
-	private Rigidbody thisRd;
+	
 
 	void Awake()
 	{
 		this.trans = transform;
-		this.thisRd = this.trans.GetComponent<Rigidbody>();
+		
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
