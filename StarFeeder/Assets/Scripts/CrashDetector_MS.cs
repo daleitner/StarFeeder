@@ -24,12 +24,12 @@ public class CrashDetector_MS : MonoBehaviour
             else if (countMeteors == 10)
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+                this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
             }
             else if (countMeteors == 15)
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+                this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
             }
 
 

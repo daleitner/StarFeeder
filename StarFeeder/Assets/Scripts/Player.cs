@@ -15,20 +15,22 @@ public class Player : MonoBehaviour
 	private int energyLevel;
 	private Animator anim;
 	private Transform trans;
-	// Use this for initialization
-	void Start ()
+
+    // Use this for initialization
+    void Start ()
 	{
 		this.trans = transform;
 		this.anim = canvas.GetComponent<Animator> ();
 		this.lives = 3;
 		this.energyLevel = 1;
 		UpdateLives();
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        
+    }
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{

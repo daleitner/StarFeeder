@@ -5,6 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     public float speed;
     public float turnspeed;
+    public GameObject shot;
+    public Transform shotSpawn;
+    public float fireRate;
+
+   private float nextFire;
+
+
 
     private Rigidbody2D rb2d;
     private AudioSource movementSound;
@@ -14,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start () {
         movementSound = GetComponent<AudioSource>();
         rb2d = GetComponent<Rigidbody2D>();
+        nextFire = 0.1f;
        
 	}
     
@@ -26,7 +34,7 @@ public class PlayerMovement : MonoBehaviour {
         transform.Translate (0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
         transform.Rotate(0.0f, 0.0f, moveHorizantal * Time.deltaTime * turnspeed);
 
-        if (Input.anyKey)
+       /* if (Input.anyKey)
         {
             if (!movementSound.isPlaying)
             {
@@ -36,7 +44,15 @@ public class PlayerMovement : MonoBehaviour {
         else
         {
             movementSound.Stop();
+        }*/
+
+
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         }
+       
         
 
     }

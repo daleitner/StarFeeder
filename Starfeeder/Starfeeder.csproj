@@ -226,7 +226,9 @@
     <Compile Include="Assets\Eazy Tools\sound manager\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CrashDetector_MS.cs" />
+    <Compile Include="Assets\Scripts\Meteor_Hit.cs" />
     <Compile Include="Assets\Scripts\MeteroidSpawner.cs" />
+    <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SunGravity.cs" />
