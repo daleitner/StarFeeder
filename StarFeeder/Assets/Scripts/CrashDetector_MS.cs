@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CrashDetector_MS : MonoBehaviour
 {
@@ -9,91 +10,44 @@ public class CrashDetector_MS : MonoBehaviour
     public Sprite Sun_2;
     public Sprite Sun_3;
     public Sprite Sun_4;
+	public Slider slider;
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.CompareTag("Meteroid_1"))
-        {
-            Destroy(coll.gameObject);
-            countMeteors += 1;
-            if (countMeteors >= 1)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
-            }
-            else if (countMeteors == 10)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-                this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
-            }
-            else if (countMeteors == 15)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-                this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
-            }
+	    var tag = coll.gameObject.tag;
+	    if (tag.Contains("Meteroid"))
+	    {
+			Destroy(coll.gameObject);
+			if(tag == "Meteroid_1")
+				countMeteors += 1;
+		    else if (tag == "Meteroid_2")
+			    countMeteors += 2;
+		    else if (tag == "Meteroid_3")
+			    countMeteors += 3;
+		    else if (tag == "Meteroid_4")
+			    countMeteors += 4;
+
+			if (countMeteors >= 15)
+			{
+				this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
+				this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
+				this.slider.value = 4;
+			}
+			else if (countMeteors >= 10)
+			{
+				this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
+				this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
+				this.slider.value = 3;
+			}
+			else if (countMeteors >= 1)
+		    {
+			    this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
+			    this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+			    this.slider.value = 2;
+
+		    }
 
 
-        }
-        if (coll.gameObject.CompareTag("Meteroid_2"))
-        {
-            Destroy(coll.gameObject);
-            countMeteors += 2;
-            if (countMeteors >= 1)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
-            }
-            else if(countMeteors == 10)
-                {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-                this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
-            }
-            else if(countMeteors == 15)
-                {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-                this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
-            }
-            
-        }
-        if (coll.gameObject.CompareTag("Meteroid_3"))
-        {
-            Destroy(coll.gameObject);
-            countMeteors += 3;
-            if (countMeteors >= 1)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
-            }
-            else if (countMeteors == 10)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-                this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
-            }
-            else if (countMeteors == 15)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-                this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
-            }
-        }
-        if (coll.gameObject.CompareTag("Meteroid_4"))
-        {
-            Destroy(coll.gameObject);
-            countMeteors += 4;
-            if (countMeteors >= 1)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
-                this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
-            }
-            else if (countMeteors == 10)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-                this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
-            }
-            else if (countMeteors == 15)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-                this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
-            }
-        }
+		}
     }
 }
