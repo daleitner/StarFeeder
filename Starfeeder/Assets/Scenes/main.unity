@@ -1652,7 +1652,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203338885}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36, y: 5, z: -10}
+  m_LocalPosition: {x: -22.03, y: 6.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2329,11 +2329,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4925469435551092, guid: dbc5960ea7df19a4886bdd9d2098000d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -36
+      value: -22.22
       objectReference: {fileID: 0}
     - target: {fileID: 4925469435551092, guid: dbc5960ea7df19a4886bdd9d2098000d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 5.06
       objectReference: {fileID: 0}
     - target: {fileID: 4925469435551092, guid: dbc5960ea7df19a4886bdd9d2098000d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2583,8 +2583,25 @@ MonoBehaviour:
   minY: -140
   maxX: 300
   maxY: 140
-  startCount: 200
+  startCount: 10
   maxCount: 200
+--- !u!95 &2080834590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080834588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc569ad0a1a10ce42b814df5e4f40cfc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2080834594
 MonoBehaviour:
   m_ObjectHideFlags: 0

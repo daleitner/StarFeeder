@@ -23,7 +23,7 @@ public class SunGravity : MonoBehaviour
 			other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
 		}
 
-        if (other.tag.Contains("Meteroid"))
+        if (other.tag.Contains( "Meteroid"))
         {
             var direction = this.trans.position - other.transform.position;
             other.attachedRigidbody.AddForce(this.magnetStrength * direction, ForceMode2D.Force);
