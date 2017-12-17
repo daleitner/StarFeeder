@@ -58,9 +58,6 @@ public class PlayerMovement : MonoBehaviour {
 
 
             
-        
-
-            Debug.Log(rb2d.velocity);
 
 
 
