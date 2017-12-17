@@ -5,16 +5,22 @@ using UnityEngine;
 public class Mover : MonoBehaviour {
 
     public float speed;
+    Rigidbody2D rb2d;
    
     
 
     void Start()
     {
-        
-       
 
 
-        GetComponent<Rigidbody2D>().velocity = (transform.forward * speed);
+
+        rb2d = GetComponent<Rigidbody2D>();
+
         
+        
+    }
+    private void Update()
+    {
+        rb2d.AddForce(transform.up * speed * 10);
     }
 }
