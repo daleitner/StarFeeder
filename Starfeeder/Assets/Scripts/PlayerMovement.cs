@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour {
    private float nextFire;
     public float bulletspeed;
 
-
-
     private Rigidbody2D rb2d;
     private AudioSource movementSound;
 
@@ -37,30 +35,23 @@ public class PlayerMovement : MonoBehaviour {
         transform.Translate(0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
         transform.Rotate(0.0f, 0.0f, moveHorizantal * Time.deltaTime * turnspeed);
 
-        /* if (Input.anyKey)
-         {
-             if (!movementSound.isPlaying)
-             {
-                 movementSound.Play();
-             }
-         }
-         else
-         {
-             movementSound.Stop();
-         }*/
+		if (Input.anyKey)
+		{
+			if (!movementSound.isPlaying)
+			{
+				movementSound.Play();
+			}
+		}
+		else
+		{
+			movementSound.Stop();
+		}
 
 
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+		if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-
             nextFire = Time.time + fireRate;
             GameObject bullet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-
-
-            
-
-
-
         }
 
 

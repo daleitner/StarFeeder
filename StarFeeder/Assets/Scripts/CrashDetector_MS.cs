@@ -42,19 +42,19 @@ public class CrashDetector_MS : MonoBehaviour
             else if (countMeteors >= 15)
             { 
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_4;
-				this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
+				this.gameObject.transform.localScale = new Vector3(8.0f, 8.0f, 8.0f);
 				this.slider.value = 4;
 			}
 			else if (countMeteors >= 10  )
 			{
 				this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_3;
-				this.gameObject.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
+				this.gameObject.transform.localScale = new Vector3(6.0f, 6.0f, 6.0f);
 				this.slider.value = 3;
 			}
 			else if (countMeteors >= 5)
 			{
 				this.gameObject.GetComponent<SpriteRenderer>().sprite = Sun_2;
-				this.gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+				this.gameObject.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
 				this.slider.value = 2;
 
 			}
