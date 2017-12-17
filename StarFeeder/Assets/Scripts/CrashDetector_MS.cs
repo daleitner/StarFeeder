@@ -12,11 +12,11 @@ public class CrashDetector_MS : MonoBehaviour
 	public Sprite Sun_4;
 	public Slider slider;
 
-	void OnTriggerEnter2D(Collider2D coll)
-	{
-		var tag = coll.gameObject.tag;
-		if (tag.Contains("Meteroid"))
-		{
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+	    var tag = coll.gameObject.tag;
+	    if (tag.Contains("Meteroid"))
+	    {
 			Destroy(coll.gameObject);
 			if (tag == "Meteroid_1")
 				countMeteors += 1;

@@ -10,6 +10,7 @@ TagManager:
   - Meteroid_3
   - Meteroid_4
   - Laser
+  - Background
   layers:
   - Default
   - TransparentFX
