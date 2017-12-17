@@ -133,6 +133,7 @@ MonoBehaviour:
   Sun_2: {fileID: 21300000, guid: a594b41c3f8b0ba4ab6bbd1a6e941cf2, type: 3}
   Sun_3: {fileID: 21300000, guid: 13ca25f97172089439c10172a025f191, type: 3}
   Sun_4: {fileID: 21300000, guid: 5ad30424c6b387a4a864e1479b60a783, type: 3}
+  slider: {fileID: 616465948}
 --- !u!114 &1889320
 MonoBehaviour:
   m_ObjectHideFlags: 0

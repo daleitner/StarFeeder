@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 				playerAnim.SetTrigger ("Explosion");
 				this.lives--;
 
-				trans.position = new Vector3(-15, 5);
+				trans.position = new Vector3(-36, 5);
 				playerAnim.SetTrigger ("Reset");
 				UpdateLives();
 					if(this.lives == 0)
