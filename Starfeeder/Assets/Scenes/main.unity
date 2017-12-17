@@ -1091,6 +1091,10 @@ Prefab:
       propertyPath: Priority
       value: 142
       objectReference: {fileID: 0}
+    - target: {fileID: 1152236347652562, guid: 818e5bd5b3c0c0e4ba60ed3a79598847, type: 2}
+      propertyPath: m_TagString
+      value: Background
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 818e5bd5b3c0c0e4ba60ed3a79598847, type: 2}
   m_IsPrefabParent: 0
@@ -1630,7 +1634,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 50
+  orthographic size: 60
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

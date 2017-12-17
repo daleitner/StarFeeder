@@ -18,11 +18,10 @@ public class BulletintoMeteor : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag==("Meteroid_1") || coll.gameObject.tag == ("Meteroid_2") || coll.gameObject.tag == ("Meteroid_3") || coll.gameObject.tag == ("Meteroid_4"))
+        if (coll.gameObject.tag==("Meteroid_1") || coll.gameObject.tag == ("Meteroid_2") || coll.gameObject.tag == ("Meteroid_3") || coll.gameObject.tag == ("Meteroid_4") || coll.gameObject.tag == ("Sun") || coll.gameObject.tag == ("Background"))
         {
-            Destroy(coll.gameObject);
-           // gameObject.transform.parent = player.gameObject.transform;
-        
+            Destroy(gameObject);
+          
         
         }
     }
