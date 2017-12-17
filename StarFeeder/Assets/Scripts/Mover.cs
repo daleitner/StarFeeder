@@ -6,8 +6,7 @@ public class Mover : MonoBehaviour {
 
     public float speed;
     Rigidbody2D rb2d;
-    public GameObject player;
-    
+   
     
 
     void Start()
@@ -24,4 +23,6 @@ public class Mover : MonoBehaviour {
     {
         rb2d.AddForce(transform.up * speed * 10);
     }
+    
+    
 }

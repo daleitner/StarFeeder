@@ -11,8 +11,8 @@ public class CrashDetector_MS : MonoBehaviour
     public Sprite Sun_3;
     public Sprite Sun_4;
 	public Slider slider;
-
-    void OnTriggerEnter2D(Collider2D coll)
+    
+    void OnCollisionEnter2D(Collision2D coll)
     {
 	    var tag = coll.gameObject.tag;
 	    if (tag.Contains("Meteroid"))

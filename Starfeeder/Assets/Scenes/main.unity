@@ -140,7 +140,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1889316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfa4edbf450e3134eac301b54098c4c5, type: 3}
   m_Name: 
@@ -1564,6 +1564,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212258434444765298, guid: 877509701345e5e408c948a452983328,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1311048177
+      objectReference: {fileID: 0}
+    - target: {fileID: 212258434444765298, guid: 877509701345e5e408c948a452983328,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 877509701345e5e408c948a452983328, type: 2}
   m_IsPrefabParent: 0
@@ -1620,7 +1630,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 50
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
