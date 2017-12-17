@@ -133,6 +133,7 @@ MonoBehaviour:
   Sun_2: {fileID: 21300000, guid: a594b41c3f8b0ba4ab6bbd1a6e941cf2, type: 3}
   Sun_3: {fileID: 21300000, guid: 13ca25f97172089439c10172a025f191, type: 3}
   Sun_4: {fileID: 21300000, guid: 5ad30424c6b387a4a864e1479b60a783, type: 3}
+  slider: {fileID: 616465948}
 --- !u!114 &1889320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2563,17 +2564,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28591da20279194e943aa1978929b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteroid_1: {fileID: 1070255565}
-  meteroid_2: {fileID: 738620391}
-  meteroid_3: {fileID: 1320437268}
-  meteroid_4: {fileID: 219570167}
+  meteroid_1: {fileID: 1416506641678912, guid: eaebe69154f5e9142a308cad4d7cbf1c, type: 2}
+  meteroid_2: {fileID: 1458054245400622, guid: edf129e56f856544596293d8eaeb3cd2, type: 2}
+  meteroid_3: {fileID: 1672604866309270, guid: e3748ae86b53c7e48915bef90c167b29, type: 2}
+  meteroid_4: {fileID: 1049712552268854, guid: c51b49c773edbad43a3c3c46e4578fe6, type: 2}
   meteroidContainer: {fileID: 1796834708}
   minX: -300
   minY: -140
   maxX: 300
   maxY: 140
-  startCount: 200
+  startCount: 10
   maxCount: 200
+--- !u!95 &2080834590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080834588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc569ad0a1a10ce42b814df5e4f40cfc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2080834594
 MonoBehaviour:
   m_ObjectHideFlags: 0

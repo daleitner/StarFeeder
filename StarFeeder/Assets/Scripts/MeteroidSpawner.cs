@@ -47,10 +47,21 @@ public class MeteroidSpawner : MonoBehaviour
 			randomY = this.rnd.Next(this.minY, this.maxY);
 		} while (!IsPositionValid(randomX, randomY));
 		Vector3 position = new Vector3(randomX, randomY);
-		var meteroidType = this.rnd.Next(4);
-		GameObject meteroidToCreate = this.meteroids[meteroidType];
+		var meteroidType = this.rnd.Next(10);
+		GameObject meteroidToCreate = this.meteroids[RandomValueToIndex(meteroidType)];
 		var newMeteroid = Instantiate(meteroidToCreate, position, Quaternion.identity);
 		newMeteroid.transform.parent = this.meteroidContainer.transform;
+	}
+
+	private int RandomValueToIndex(int meteroidType)
+	{
+		if (meteroidType < 4)
+			return 0;
+		if (meteroidType < 7)
+			return 1;
+		if (meteroidType < 9)
+			return 2;
+		return 3;
 	}
 
 	// Update is called once per frame

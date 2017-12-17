@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 	private int lives;
 	private int energyLevel;
 	private Animator anim;
+	private Animator playerAnim;
 	private Transform trans;
 
     // Use this for initialization
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
 	{
 		this.trans = transform;
 		this.anim = canvas.GetComponent<Animator> ();
+		this.playerAnim = GetComponent<Animator> ();
 		this.lives = 3;
 		this.energyLevel = 1;
 		UpdateLives();
@@ -38,11 +40,13 @@ public class Player : MonoBehaviour
 		{
 			if (this.lives > 0)
 			{
+				playerAnim.SetTrigger ("Explosion");
 				this.lives--;
 
-				trans.position = new Vector3(-15, 5);
+				trans.position = new Vector3(-36, 5);
+				playerAnim.SetTrigger ("Reset");
 				UpdateLives();
-				if(this.lives == 0)
+					if(this.lives == 0)
 					anim.SetTrigger ("GameOver");
 			}
 		}
