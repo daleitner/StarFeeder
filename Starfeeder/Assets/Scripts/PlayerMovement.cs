@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     public float fireRate;
 
    private float nextFire;
+    public float bulletspeed;
 
 
 
@@ -22,39 +23,49 @@ public class PlayerMovement : MonoBehaviour {
         movementSound = GetComponent<AudioSource>();
         rb2d = GetComponent<Rigidbody2D>();
         nextFire = 0.1f;
-       
-	}
-    
+     
+
+    }
+
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         float moveHorizantal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        transform.Translate (0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
+        transform.Translate(0.0f, moveVertical * speed * Time.deltaTime, 0.0f);
         transform.Rotate(0.0f, 0.0f, moveHorizantal * Time.deltaTime * turnspeed);
 
-       /* if (Input.anyKey)
-        {
-            if (!movementSound.isPlaying)
-            {
-                movementSound.Play();
-            }
-        }
-        else
-        {
-            movementSound.Stop();
-        }*/
+        /* if (Input.anyKey)
+         {
+             if (!movementSound.isPlaying)
+             {
+                 movementSound.Play();
+             }
+         }
+         else
+         {
+             movementSound.Stop();
+         }*/
 
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
+
             nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-        }
-       
+            GameObject bullet = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+
+
+            
         
 
-    }
+            Debug.Log(rb2d.velocity);
 
+
+
+        }
+
+
+    }
 }
