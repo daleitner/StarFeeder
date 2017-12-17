@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletintoMeteor : MonoBehaviour {
 
    
-    public GameObject player;
+  
 	// Use this for initialization
 	void Start () {
 		
