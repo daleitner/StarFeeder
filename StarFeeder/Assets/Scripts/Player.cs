@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 			{
 				this.lives--;
 
-				trans.position = new Vector3(-15, 5);
+				trans.position = new Vector3(-36, 5);
 				UpdateLives();
 				if(this.lives == 0)
 					anim.SetTrigger ("GameOver");
