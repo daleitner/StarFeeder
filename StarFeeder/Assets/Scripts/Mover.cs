@@ -6,7 +6,8 @@ public class Mover : MonoBehaviour {
 
     public float speed;
     Rigidbody2D rb2d;
-   
+    public GameObject player;
+    
     
 
     void Start()
