@@ -1683,8 +1683,8 @@ MonoBehaviour:
   minY: -140
   maxX: 300
   maxY: 140
-  startCount: 10
-  maxCount: 200
+  startCount: 20
+  maxCount: 100
 --- !u!95 &2080834590
 Animator:
   serializedVersion: 3
