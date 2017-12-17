@@ -2573,7 +2573,7 @@ MonoBehaviour:
   minY: -140
   maxX: 300
   maxY: 140
-  startCount: 10
+  startCount: 200
   maxCount: 200
 --- !u!114 &2080834594
 MonoBehaviour:
