@@ -11,6 +11,14 @@ public class CrashDetector_MS : MonoBehaviour
 	public Sprite Sun_3;
 	public Sprite Sun_4;
 	public Slider slider;
+	public Canvas canvas;
+
+	private Animator anim;
+
+	void Start()
+	{
+		this.anim = this.canvas.GetComponent<Animator>();
+	}
 
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -29,7 +37,7 @@ public class CrashDetector_MS : MonoBehaviour
 
             if (countMeteors >= 20)
             {
-                
+                this.anim.SetTrigger("Win");
             }
             else if (countMeteors >= 15)
             { 
